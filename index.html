@@ -1,0 +1,338 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="en" style=""><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&amp;family=Plus+Jakarta+Sans:wght@400;600&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet"><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">try{try{
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-primary-fixed-variant": "#643f00",
+                    "on-primary": "#ffffff",
+                    "background": "#fcf9f2",
+                    "outline-variant": "#d7c3ae",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container-high": "#ebe8e1",
+                    "on-tertiary-fixed-variant": "#5d4037",
+                    "primary-fixed": "#ffddb5",
+                    "secondary-fixed": "#eae4b1",
+                    "secondary": "#636037",
+                    "primary": "#835400",
+                    "surface-container-low": "#f6f3ec",
+                    "tertiary-fixed": "#ffdbd0",
+                    "error-container": "#ffdad6",
+                    "on-secondary-fixed-variant": "#4b4822",
+                    "on-primary-fixed": "#2a1800",
+                    "on-secondary": "#ffffff",
+                    "on-tertiary": "#ffffff",
+                    "on-surface": "#1c1c18",
+                    "surface-tint": "#835400",
+                    "tertiary-fixed-dim": "#e7bdb1",
+                    "primary-fixed-dim": "#ffb957",
+                    "on-tertiary-container": "#604239",
+                    "surface-container": "#f0eee7",
+                    "surface": "#fcf9f2",
+                    "inverse-on-surface": "#f3f0ea",
+                    "secondary-fixed-dim": "#cdc897",
+                    "surface-bright": "#fcf9f2",
+                    "inverse-surface": "#31312c",
+                    "on-primary-container": "#674100",
+                    "outline": "#857462",
+                    "on-tertiary-fixed": "#2c160e",
+                    "on-background": "#1c1c18",
+                    "on-secondary-container": "#67643b",
+                    "secondary-container": "#e7e1ae",
+                    "on-error": "#ffffff",
+                    "primary-container": "#f9a825",
+                    "on-error-container": "#93000a",
+                    "surface-dim": "#dcdad3",
+                    "surface-container-highest": "#e5e2db",
+                    "on-surface-variant": "#524434",
+                    "tertiary": "#77574d",
+                    "on-secondary-fixed": "#1e1c00",
+                    "inverse-primary": "#ffb957",
+                    "tertiary-container": "#d8b0a4",
+                    "error": "#ba1a1a",
+                    "surface-variant": "#e5e2db"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "margin-mobile": "16px",
+                    "container-max": "1200px",
+                    "margin-desktop": "48px",
+                    "unit": "8px",
+                    "gutter": "24px"
+            },
+            "fontFamily": {
+                    "headline-md": ["Bricolage Grotesque"],
+                    "body-lg": ["Plus Jakarta Sans"],
+                    "display-lg-mobile": ["Bricolage Grotesque"],
+                    "display-lg": ["Bricolage Grotesque"],
+                    "label-sm": ["Plus Jakarta Sans"],
+                    "body-md": ["Plus Jakarta Sans"]
+            },
+            "fontSize": {
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "display-lg-mobile": ["36px", {"lineHeight": "42px", "letterSpacing": "-0.01em", "fontWeight": "800"}],
+                    "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                    "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    }catch(_e){}}catch(_e){}</script></head><body class="bg-background text-on-background font-body-md selection:bg-primary-container selection:text-on-primary-container overflow-x-hidden">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-outline-variant/30">
+    <div class="flex items-center justify-between px-margin-mobile md:px-margin-desktop h-16 w-full max-w-container-max mx-auto">
+        <div class="flex items-center gap-3">
+            <span class="material-symbols-outlined text-primary" data-icon="auto_stories" data-original-icon="auto_stories">auto_stories</span>
+            <h1 class="font-headline-md text-headline-md text-primary italic">Peeps</h1>
+        </div>
+        <nav class="hidden md:flex gap-8">
+            <a class="font-label-sm text-label-sm text-primary hover:opacity-80 transition-opacity" href="#">Memories</a>
+            <a class="font-label-sm text-label-sm text-on-surface-variant hover:opacity-80 transition-opacity" href="#">Timeline</a>
+            <a class="font-label-sm text-label-sm text-on-surface-variant hover:opacity-80 transition-opacity" href="#">Upcoming</a>
+        </nav>
+        <button class="md:hidden text-on-surface-variant">
+            <span class="material-symbols-outlined" data-icon="menu">menu</span>
+        </button>
+    </div>
+</header>
+<main class="relative pt-16 pb-24 md:pb-12">
+    <div class="fixed inset-0 grain-texture opacity-30 z-[-1]"></div>
+    <!-- Hero Section -->
+    <section class="relative overflow-hidden pt-20 pb-32 px-margin-mobile md:px-margin-desktop golden-hour-glow">
+        <div class="max-w-container-max mx-auto text-center">
+            <div class="inline-flex items-center gap-2 bg-secondary-container text-on-secondary-container px-4 py-1.5 rounded-full mb-8 animate-fade-in">
+                <span class="material-symbols-outlined text-[18px]" data-icon="favorite" style="font-variation-settings: &quot;FILL&quot; 1;">favorite</span>
+                <span class="font-label-sm text-label-sm">Established 2024</span>
+            </div>
+            <h2 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-6">
+                Peeps
+            </h2>
+            <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto leading-relaxed">
+                From Senior High School to College. <br class="hidden md:block">Our journey, cherished in the golden light of shared history.
+            </p>
+        </div>
+        <!-- Floating Decorative Elements -->
+        <div class="absolute top-1/2 left-10 -translate-y-1/2 opacity-20 hidden lg:block">
+            <span class="material-symbols-outlined text-[120px] text-primary-fixed-dim" data-icon="light_mode">light_mode</span>
+        </div>
+    </section>
+
+    <!-- The Beginning Section -->
+    <section class="py-24 px-margin-mobile md:px-margin-desktop bg-surface-container-low">
+        <div class="max-w-container-max mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6">
+                <div class="inline-block px-3 py-1 bg-tertiary-container text-on-tertiary-container rounded-lg font-label-sm text-label-sm">
+                    Chapter 01: Senior High</div>
+                <h3 class="font-headline-md text-headline-md text-on-surface">The Beginning</h3>
+                <p class="font-body-md text-body-md text-on-surface-variant leading-loose"><p class="">Our story began in Grade 11 when we, a group of&nbsp; students, became classmates without realizing that we were about to build a friendship that would last beyond the classroom. What started as simple conversations, sharing notes, helping each other with schoolwork, and laughing over the smallest things slowly turned into countless unforgettable memories. As we moved on to Grade 12 together, our bond grew even stronger through every challenge, celebration, and inside joke we shared. We became each other's support system, creating moments that made school feel like a second home. That's how <strong>Peeps</strong> was born—not just as the name of our friend group, but as a reminder that the best friendships often begin with ordinary classmates who choose to stay together through every chapter of life.</p></p>
+                <div class="dashed-divider h-px w-full my-8"></div>
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 rounded-full border-2 border-outline-variant overflow-hidden">
+                        <img class="w-full h-full object-cover" alt="The Uniform Days" src="https://lh3.googleusercontent.com/aida-public/AB6AXuChYZGYYz4ixiR3u3XPyqguIzwML_xWR3nX61lp9eXhYv805vzJD3hIK8OdBIPJ-6mNxb5dgZg9dDyDIjBlZzjiZhF6Ewk_-n1Id1I4hPe4J23kzmvGJyApX-SQOKfsLdsIP-I-BIW-aqash3C7w7PGvC92teYZkK3BXNmd25B9ryvM7d97sCir77YLXPuE9Bakns7z_U1xiskc-8xx8Y3gmEuaqVaI1tjG32e2oVQXym0DOp9xwcyd39vwkOJ63j4zvA" data-stitch-orig-opacity="0">
+                    </div>
+                    <div>
+                        <p class="font-label-sm text-label-sm italic text-on-surface-variant">"It started with a shared pen and ended with a lifelong bond."</p>
+                    </div>
+                </div>
+            </div>
+            <div class="relative">
+                <div class="bg-white p-4 md:p-6 rounded-sm polaroid-frame rotate-2 aspect-square shadow-xl">
+                    <div class="w-full h-[85%] overflow-hidden rounded-sm mb-4">
+                        <img class="w-full h-full object-cover" alt="Group jumping together" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2cEpWHmTJGnNdylPOMb0_uZTzch_U2ALWtI_64RjXo8UGg5uxJqxYa8saDHe0aOhTms0ffYjqrD2oMSo7x3acOSbIlEvPGxkbQtnfM28ffwL8Ah-ihnDo65Wnusiw0dVV83jQ5PCGLN2eMKy4RBF3jig5YIEraNoJVV7KrlDaShHqDrv6Ed-DOHjNHEP8ix-e30aOZRMum7Tbr0-U85pmFVIh6RUDpm74jS6pP7C3bky2zYbRYI9DVJi2Zr0hpbbAUnx02PfmAcPvtw">
+                    </div>
+                    <p class="font-headline-md text-center text-primary-fixed-dim opacity-60 text-lg">The Graduation</p>
+                </div>
+                <div class="absolute -bottom-6 -left-6 bg-secondary-container p-6 rounded-xl shadow-lg -rotate-3 hidden md:block">
+                    <span class="material-symbols-outlined text-on-secondary-container block mb-2" data-icon="auto_awesome">auto_awesome</span>
+                    <p class="font-label-sm text-label-sm text-on-secondary-container">September 12, 2022</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Memories Gallery -->
+    <section class="py-24 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+        <div class="text-center mb-16">
+            <h3 class="font-headline-md text-headline-md text-primary mb-4">Memories</h3>
+            <p class="font-body-md text-body-md text-on-surface-variant">Little pieces of the summers we spent together.</p>
+        </div>
+        
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-8">
+            <!-- 20 Photos Gallery -->
+            <div class="bg-white p-3 pt-3 pb-8 polaroid-frame -rotate-2">
+                <div class="aspect-square bg-surface-dim overflow-hidden">
+                    <img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvbWnGENrhfhedfsAuXoo-FA5AwfOZyxcHSuW2tZlkMJAOBb7WHAdMnHy32TQHxtXTQ42R06pt1qRv8tcqAcMCALlXO51Xsvm58_CrPnMK-I16F2720V9MhmWhBPAN5NfJHGIANmr1_9S-Hr7h3kDXy95hJhzy49_v1W6KIYml8NTdi46bnFsg59M0fX5akooHbed4wZANm8GkIsq9qsvFx63AZckCsVpcGzlLphsKtLf71PbtOCqEU1IZqILuq-jACA" alt="Memory 1">
+                </div>
+            </div>
+            <div class="bg-white p-3 pt-3 pb-8 polaroid-frame rotate-1 mt-4 md:mt-0">
+                <div class="aspect-square bg-surface-dim overflow-hidden">
+                    <img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBeL-AeBHpDfh4da7tehZXe0NhQ6R90393Td5Ib3uoR-dCNhPOugiS3kvoRt4brXtjIPjpvU1ceR2Soz2dr61EzFCfVOn0kNwPuqU9m2K_XO8PV_cSsu5R9btN8K8QvCnCvOQPvWoS1wZFYeoju7R4WW4pOQWJw8Tt5f72ffiUEJV-s_7bwPm_SSbgYz08fxL2wvpg16DEOLxBs1d5939xEwkmzRwvQyQBJOf33wptBsfqeRkt6GoIMAJwp5GOGNVIBXA" alt="Memory 2">
+                </div>
+            </div>
+            <div class="bg-white p-3 pt-3 pb-8 polaroid-frame -rotate-3 mt-2">
+                <div class="aspect-square bg-surface-dim overflow-hidden">
+                    <img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkIZi8CTgvJ_4uomeZKKZG2ojCPzL_xZBO4s07jG5nKAIZe35RQ9HVDw6O0PA8Om8ar-uQ_7n3KvsUm4DMiVLHXpYe3bi21q16aNfatEADrKi2WQXqsvBylPf43XAEXHnD35n87lqIN3m2BDHKNewvkFybe6OPwS-p2Fl79q6JyA8J7s_Y9PhIuXHsEhCdBFp__GVAzbnN2hqO9WJU8KlZGMVsNfkWn0YBXhU73EGMmcqMoubugyqt9Xt6pZNcwazCVg" alt="Memory 3">
+                </div>
+            </div>
+            <div class="bg-white p-3 pt-3 pb-8 polaroid-frame rotate-2">
+                <div class="aspect-square bg-surface-dim overflow-hidden">
+                    <img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1LX7NXsv8N9dcOdW2RMUhny8sRvn5RNXuC_WEPq6mclEykbeL1jdcVyVqazeXracgYnvUiB3DJ32FWg71la_FvKb1p9SmNPFNWV86GIix5HSrmrMigpzVD-08ncBXaM96e94I2tan4DKYed3g13mYkD-7YEqnzX2PX79sau5QOK_ErkIhw7hzK_yZGaIIIDksaEq4_nx_vYMPZ8ouAYszJ46JZx3XWHx4-WXgbNOdMu_o1xJW3OW5PY7qAR4rWx8_8A" alt="Memory 4">
+                </div>
+            </div>
+            <div class="bg-white p-3 pt-3 pb-8 polaroid-frame -rotate-1">
+                <div class="aspect-square bg-surface-dim overflow-hidden">
+                    <img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVfZi1mg-SNu33e9jCPEfWd9ZPzncidWojBuFEnupxW1ej5cOpwH79AWRPuYc4dySLKQSzA8UBQ2s-nNAB2fdUfIY55gQxkuiX3NCgzOtD7nNHoprWly-xH7kpaNsPWfTcCfcUql5Trp_tmEAuEK4TdjCEOoACdkgF_FuNObmRsCxiBg66SvEFMZQsLS1ub0rY6gkuCiGBs0VFj60XXP52Owik9I73yD_b5A2iqVxhPXyiiMEx1Ssn5I4ynSQByAJQNA" alt="Memory 5">
+                </div>
+            </div>
+            <div class="bg-white p-3 pt-3 pb-8 polaroid-frame rotate-3 mt-4">
+                <div class="aspect-square bg-surface-dim overflow-hidden">
+                    <img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBw2Mv_bOIsbJ_AXLliPjnXonu8wv1fGMPcLVGZNU-dWFLU10iatm38AvUIImvzWVBdQ8TzbIcPDkMOcQ18UZoumGk5TyN-f_zdFm5z_AcHUJmfK3Q0_Fhki0k_79BDoCb5eoA6MX_8CaTQwovyFNBgJaLGGhM3CJarrbEdchuy8KpxyeBB75c7l_dvqhpzdNqynoI1Qdpsx3uw8Ga5IRTR0UHtddY-ARQxf7EMuRHEmWbJiYAdznTzKXurjZeWrF745A" alt="Memory 6">
+                </div>
+            </div>
+            <div class="bg-white p-3 pt-3 pb-8 polaroid-frame -rotate-2">
+                <div class="aspect-square bg-surface-dim overflow-hidden">
+                    <img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFGJJ13Ch6o3EqmgE8dioAJ9Gspk6vkR6tIwJVvQ1NBz7u0uyCmTIRDg8BPUyOX3rHcrEWThPkfRgDcKxQmdz9gGAfmNqcT0bJQNv4a3C9k538QDCoBaAHMQSExmpgH1k8aZHdc0MYv1CkfOFHIvM0CSKDzTbVRH5uSlj6LFAbNNJAH9H9nUEOOjoJLCf_i6wqwEJsWWZ6Nr6itdcRbkTEp08LBORQ1-tKNdInxrk-kPutzjUZihvt_oNSEOBwiNl-4g" alt="Memory 7">
+                </div>
+            </div>
+            <div class="bg-white p-3 pt-3 pb-8 polaroid-frame rotate-1 mt-2">
+                <div class="aspect-square bg-surface-dim overflow-hidden">
+                    <img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHt9Tzf9YS2JI1XVOZ5qPVBoYjDEg7G7hItXsuPl15gb2m43Vhjg1Ylnp4FJBe_HqiERYjMijHr_QNoEjevNaMz4YkbLNr0wWWLlxGCm--R3MPO53g2HHN2RD4fdpFAZEaDjMmXy8NX2Gah_amNKlfI1-yspUTjg4miY-W2d8VT71PVTOPV_K1bXkNagJ90HYq__GwNLTEqgTXtbt7rpXstjO9qo6UIo0DEx-2kNKK1_WSv9n5IXyZItn3hZhVY9F2sA" alt="Memory 8">
+                </div>
+            </div>
+            <div class="bg-white p-3 pt-3 pb-8 polaroid-frame -rotate-3">
+                <div class="aspect-square bg-surface-dim overflow-hidden">
+                    <img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAji85LPUS-LAMVMVuVJ1DeH5eLpAEz1qMY7bfa6PUJh2ZWoZ4v8_QvNUY-Yl6FR1_8GCfr_97B4kvteoZj_VMIOH5Hxx_RpG6_CsqbrXKTQnf23uN0Cfmc--CebVjWGktAg9hmLF5ap5VD1cmDkOT7HB3-QcZNC-PG0haBPKIpFhRatoRelxAMfz7Dmo247psW8onJe3WK6bInBqjVnti2PdVs7x9kli0ahr-9FyngzGnv4tDhNEbG3ewD9jPFGum1tw" alt="Memory 9">
+                </div>
+            </div>
+            <div class="bg-white p-3 pt-3 pb-8 polaroid-frame rotate-2 mt-4">
+                <div class="aspect-square bg-surface-dim overflow-hidden">
+                    <img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAnSVmrrA5ZcPfaZWzT6fSbo6TkdrcDb7mnm14RpEfCjNfxYy1VBAYYph6-S6gcN0gFGBwAimgHrPP-hCMhKkcsUpZTuBHQ3nJU0XWtMYMAZtSQ9kEujWVkcgaL1rS9oYvwC2uXnOnS0zzxKXYOisifA8N3CNpTOMG2DQYakDJlww45MnN6yq9ukmmnxRwhvlZ0KEANWaz-PATntsmt2-tT98sv9fPMdE-znsRQW6QslFXYYsSVf95EdtR4VEl_pNDQ2Q" alt="Memory 10">
+                </div>
+            </div>
+            <div class="bg-white p-3 pt-3 pb-8 polaroid-frame -rotate-1">
+                <div class="aspect-square bg-surface-dim overflow-hidden">
+                    <img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBw8JsQataqrAETLlg9wUFyS1sMz3VBiXuSNYkQYz-0-fHyKnaSJA9khX8Lqin22mP2CXjbZLbii8vLtrLdgS9ZfEkbB7Jd4160oq2NfeaQWLZgxVi1O1ELs11VRAzDSuEISjb4GIYR5EwseV1awQvm0epPlsU7XGn0wKHWVYN6y6tUb5yvpbfbBxQ3vqxgnzEMoIKB7Ixp8lL2Q6TavcDZf1I58VuC-EptA525sO28ikeHGykJhGKmzTXw1OC6vy6PvQ" alt="Memory 11">
+                </div>
+            </div>
+            <div class="bg-white p-3 pt-3 pb-8 polaroid-frame rotate-3 mt-2">
+                <div class="aspect-square bg-surface-dim overflow-hidden">
+                    <img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBr87OSkWCp_1FJWquVPT5oPLgnQPBtdlzHKAelYEzzmiHZqxYFIIK5ofhWl3CSVr_v-LedpyuG4x1t533ORWoATZhfRbbQXIkV9daxC5QY2Om5RgvfAPFwDic3-QdgST-cizRcnf8K20DRBLU13ThUx5wciRqrm-EkatBgrfx0szRprKdi5eg5kFd1ef2Pjhn21eeUMc73Kr2zhANcheLhJXg2Vo6HPvG9zg4xCYivY1gitiYIcA95gz9bS9TqhnKR6A" alt="Memory 12">
+                </div>
+            </div>
+            <div class="bg-white p-3 pt-3 pb-8 polaroid-frame -rotate-2">
+                <div class="aspect-square bg-surface-dim overflow-hidden">
+                    <img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcG8xx0OAoQ_gGEzNocgqH2_wMZnw6DNPlqbIFwSvzlUG1FNqxdMgPMcf2F0kylkzg57Dj5MHdz9PGTZ8MRTkCdAeZZ68JURr45F6VREQ75HH8iYecJwf1L6V_pERcc8ZL-5LvdGk28kBS_N4KWe-WzxH21k1VWNoOIKQrQqGJbmetIB9rig52BmXU8YlqtbnKZQN8NAyNyLqsMK5FMO1sXYmTYyiv2PoC_bRb_cUmgzMP36jOUvBnxwgjm3eNTeUjrQ" alt="Memory 13">
+                </div>
+            </div>
+            <div class="bg-white p-3 pt-3 pb-8 polaroid-frame rotate-1 mt-4">
+                <div class="aspect-square bg-surface-dim overflow-hidden">
+                    <img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCuRHEmK4pqJHEx4ou7anrA6XD9BrvLyeQITLecXYIauuhsjE7IpHdMQRmVmNmXWtrbXCJzgKyjDEwwK9T5zFZZ9i0otQlum9ixFg2JLiwmk3nnRRnSRyFnzY5lGfqWKI2QaF5dFu8iSK1K1DT2cNoMtG5qT9Z6CjWKqHVOMXJkJd1EMAsKXb-Rb67eeFdoB6l3lc4G4eUGY7CuzoXDO8WC0emvfiTwjbOkm7aLRJPi0cIdHkWXiw5k-rHKu1SmLLSq5A" alt="Memory 14">
+                </div>
+            </div>
+            <div class="bg-white p-3 pt-3 pb-8 polaroid-frame -rotate-3">
+                <div class="aspect-square bg-surface-dim overflow-hidden">
+                    <img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0UrJY4V11Weg8KnQ4ZYrUCRcI2tzLMRLd8npKD-yMThK0F4vkk2bqWv3x06XDOPsORVvoVNdjkyKhHV6fCpPNQev1QScjFh8fNpLkNKYQA5IC13z-r0kaI3475XQoarq1SHqu0LycESjfwsxBjIv4lCKyfqtFoFDYxtuQP9ikQa07rKsLfYpiQICIVZHFxdxw98hZ_LLSgqo5QXHyRkZFcks37esvwDZjSRBLrL7Pp330MrmK_hXWScQj2q9NnmpqJA" alt="Memory 15">
+                </div>
+            </div>
+            <div class="bg-white p-3 pt-3 pb-8 polaroid-frame rotate-2 mt-2">
+                <div class="aspect-square bg-surface-dim overflow-hidden">
+                    <img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPZBt3fQ8nmV9mRBKyqGVV6Vugj7YiYbQeilGkjNapZ5vVQX8JC1jTTRHbn3MU5a9IQrIrujxACyXraYu1600QfJnIuctMcusZj4mg4NefCOpYFwo_lzuK4gUQOP2R4_bFCDih_swlVX2e7qp_Nwz2y7254Q3woDMvoXRHq4EA4ottJ4jArVL1zLw853p4rBEFfYLQI44Ervpp7TEX3HCytYXyWi80dwOMyQ5glVplwz2XZ3672L6BjxGg59zGPgAFIw" alt="Memory 16">
+                </div>
+            </div>
+            <div class="bg-white p-3 pt-3 pb-8 polaroid-frame -rotate-1">
+                <div class="aspect-square bg-surface-dim overflow-hidden">
+                    <img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAEKmZh3a8QDM4T0Q2ugNpAYO-cFBYhJKr0xriI-Rcf-kFJWR-hC0X3bJYBcniFSlg7vFPqZP2iV4YWGK_hUfsGhK_XJndTNbq6wt9C43Cw37xVHhXkZWS9N-sYYt0-Eq87Eg6M3b5dXhRCdjz2p_Da754z03mkawpaDFbn9yiPkIdMCJeRjwAeSQpcGcYag29TacgoDpG3bvcXZx-_IwYbTr4DasaIKYwS0ziHhf-JWmAqHsFjz0hpNQmpZ3Lf2_H3sA" alt="Memory 17">
+                </div>
+            </div>
+            <div class="bg-white p-3 pt-3 pb-8 polaroid-frame rotate-3 mt-4">
+                <div class="aspect-square bg-surface-dim overflow-hidden">
+                    <img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-gW2wFn6lQ2euivL1-WcxrgS1w8SU_CjsgHBOFXAJ6nEhwmpK8cYyzktGdmIWFsgP4hX8FHH3IdZ1OHWpYx3tq1FPkp3-5UGsf67AfQXZ_RgA2dMUpNEuc77uAmxA9xg84WDLn29TTo_0nfHA3xRDYgjevWUlYwPuLjvF1q0F44uMKFTIdyIpl1nKZnJukZgkDiU7tVwPjVGueibc-_uLjkGGe61LjS8Rsnpw5zNLTDo_lkBAK5oRX8xraBwmlBj1Sw" alt="Memory 18">
+                </div>
+            </div>
+            <!-- Added original source photos to round out the 20 -->
+            <div class="bg-white p-3 pt-3 pb-8 polaroid-frame -rotate-2">
+                <div class="aspect-square bg-surface-dim overflow-hidden">
+                    <img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgb6KsOSmcEX3mesqHkjMb8IxXNtMXcQXwXMpTeP6iiQL_fxNlZ0VeAwNXz0uPG1C2NDsRxf4UFqiHpIwk2WhTlEDkic7rFxxR58A5ie0qUcDxI-Tbb1-IwK4nRVUBqKXxw_yn-PemhXgSfNK9MjnnMpwxodrYqk-NbAx_Qc4Mm_oo7jSp4m-xT_fTAq3rQM9uOvZishWGeHKbE52tAdJWd_H6Xzy6PYQRyWv1xrNCnsoSdkzcg4gSp_ryyJujlVpIXA" alt="Memory 19">
+                </div>
+            </div>
+            <div class="bg-white p-3 pt-3 pb-8 polaroid-frame rotate-1">
+                <div class="aspect-square bg-surface-dim overflow-hidden">
+                    <img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCeg9Cx895C3kDo41WMlwu0qjrT6_ZN4eRuJzgMl9G3sc6G47ZniYcP2D0ESofMJvp1Jnjk6n0dsJL5fqU3OSX_0fkhX8qI8VQwx7AmwQeIgIgoGPie8cLJPT5wfnypLM9g4bD9mVKnYqVmn7Liw6kB0jlg9NKxvWnBCimxiBzFGyip6hWs85uOgR6edZcqYcmU9bUaIPY1FZpNjrPmilA_mSb1LfT5zv81Ydi1LbZ9mNB2wFtNUtWe89auQ_o4ch3XOw" alt="Memory 20">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Next Chapter Section -->
+    <section class="py-24 px-margin-mobile md:px-margin-desktop bg-on-primary-fixed-variant text-on-primary relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10"></div>
+        <div class="max-w-3xl mx-auto text-center relative z-10">
+            <span class="material-symbols-outlined text-[48px] text-primary-fixed-dim mb-6" data-icon="school">school</span>
+            <h3 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg mb-8">The Next Chapter</h3>
+            <p class="font-body-lg text-body-lg mb-12 leading-relaxed opacity-90">
+                We’re packing our bags and heading to different universities, but the map of our friendship remains unchanged. Freshmen year might bring new hallways and unfamiliar faces, but we carry these years in our back pockets like cherished letters.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <div class="px-6 py-3 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 flex items-center gap-2">
+                    <span class="w-2 h-2 rounded-full bg-green-400 animate-pulse"></span>
+                    <span class="font-label-sm text-label-sm">Manila Bound</span>
+                </div>
+                <div class="px-6 py-3 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 flex items-center gap-2">
+                    <span class="w-2 h-2 rounded-full bg-blue-400 animate-pulse"></span>
+                    <span class="font-label-sm text-label-sm">Stay in Bulacan</span>
+                </div>
+                <div class="px-6 py-3 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 flex items-center gap-2">
+                    <span class="w-2 h-2 rounded-full bg-red-400 animate-pulse"></span>
+                    <span class="font-label-sm text-label-sm">Tarlac Bound</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final Message Section -->
+    <section class="py-32 px-margin-mobile md:px-margin-desktop text-center">
+        <div class="max-w-container-max mx-auto bg-surface-container p-12 md:p-24 rounded-[40px] relative overflow-hidden border border-outline-variant/30">
+            <div class="relative z-10">
+                <h3 class="font-headline-md text-headline-md text-on-surface mb-6">Keep the fire burning.</h3>
+                <p class="font-body-md text-body-md text-on-surface-variant max-w-lg mx-auto">
+                    Don't let the memories fade. These years are the foundation of everything we'll become. Stay connected, stay inspired, and always remember the Peeps.
+                </p>
+            </div>
+            <!-- Decorative Blur -->
+            <div class="absolute -top-24 -right-24 w-64 h-64 bg-primary-fixed-dim/20 blur-[100px] rounded-full"></div>
+            <div class="absolute -bottom-24 -left-24 w-64 h-64 bg-tertiary-fixed/30 blur-[100px] rounded-full"></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 px-margin-mobile md:px-margin-desktop border-t border-outline-variant/20">
+        <div class="max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+            <div class="flex items-center gap-3">
+                <span class="material-symbols-outlined text-primary" data-icon="auto_stories">auto_stories</span>
+                <h1 class="font-headline-md text-headline-md text-primary italic">Peeps</h1>
+            </div>
+            <div class="text-on-surface-variant font-label-sm text-label-sm">
+                Made with love &amp; nostalgia © 2024
+            </div>
+            <div class="flex gap-6">
+                <a class="text-on-surface-variant hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined" data-icon="share">share</span></a>
+                <a class="text-on-surface-variant hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined" data-icon="mail">mail</span></a>
+            </div>
+        </div>
+    </footer>
+</main>
+
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 bg-surface-container-low border-t border-outline-variant/20 shadow-sm flex justify-around items-center px-4 py-2 md:hidden">
+    <a class="flex flex-col items-center justify-center bg-primary-container text-on-primary-container rounded-full px-4 py-1 transition-all active:scale-105 duration-300" href="#">
+        <span class="material-symbols-outlined" data-icon="auto_awesome_motion" style="font-variation-settings: &quot;FILL&quot; 1;">auto_awesome_motion</span>
+        <span class="font-label-sm text-label-sm">Memories</span>
+    </a>
+    </nav></body></html>
